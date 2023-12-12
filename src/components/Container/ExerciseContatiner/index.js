@@ -20,7 +20,10 @@ export default function ExerciseContainer(props) {
 
             </View>
             <ScrollView style={styles.main}>
-                {props.children}
+                <View>
+
+                    {props.children}
+                </View>
             </ScrollView>
         </Container>
     )
@@ -28,22 +31,19 @@ export default function ExerciseContainer(props) {
 
 const styles = StyleSheet.create({
     header: {
-        width: '100%',
         flexDirection: 'row',
         marginTop: 20,
     },
-    headerBackButton:{
+    headerBackButton: {
         alignSelf: 'center',
-        marginRight: -20,
+        marginRight: -30,
     },
-    headerTitle:{
+    headerTitle: {
         alignSelf: 'center',
         marginRight: 'auto',
         marginLeft: 'auto',
     },
     main: {
-        width: '100%',
-        height: '100%',
         backgroundColor: '#ffffff',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,

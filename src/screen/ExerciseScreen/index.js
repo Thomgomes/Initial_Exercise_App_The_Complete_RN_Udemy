@@ -11,17 +11,17 @@ export default function ExerciseScreen() {
                 <ExerciseChosse
                     title='Exercício 1'
                     navigation='Exercise_1'
-                    buttonText='Show two Text elements'
+                    buttonText='Mostrar 2 elementos de texto'
                 />
                 <ExerciseChosse
                     title='Exercício 2'
                     navigation='Exercise_2'
-                    buttonText='FlatList scroll horizontal'
+                    buttonText='FlatList scroll na horizontal'
                 />
                 <ExerciseChosse
                     title='Exercício 3'
                     navigation='Exercise_3'
-                    buttonText='Random Colors'
+                    buttonText='Cores Aleatórias'
                 />
         </ExerciseContainer>
     )

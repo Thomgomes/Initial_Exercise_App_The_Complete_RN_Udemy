@@ -1,10 +1,14 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import ExerciseContainer from '../../../components/Container/ExerciseContatiner'
 
 export default function Exercise_3() {
   return (
-    <View>
-      <Text>3</Text>
-    </View>
+    <ExerciseContainer
+      title='Exercício 1'
+      navigation='ExerciseScreen'
+    >
+      
+    </ExerciseContainer>
   )
 }
