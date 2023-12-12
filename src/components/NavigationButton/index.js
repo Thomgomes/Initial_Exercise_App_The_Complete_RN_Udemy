@@ -30,13 +30,6 @@ const styles = StyleSheet.create({
     marginLeft: 'auto',
     marginRight: 'auto',
   },
-  onMainView: {
-    marginTop: 30,
-  },
-  onResultView: {
-    marginTop: 10,
-    marginBottom: 5,
-  },
   textButton: {
     fontSize: 20,
     color: '#fff'
