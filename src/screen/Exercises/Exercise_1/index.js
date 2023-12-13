@@ -11,7 +11,7 @@ export default function Exercise_1() {
       <View style={styles.viewBox}>
         <Text style={styles.textStyle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat distinctio ut itaque minima doloremque fuga, mollitia tenetur sequi necessitatibus. Ut.</Text>
         <Text style={styles.textStyle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium iusto dignissimos optio dolores, libero tempore, repellendus odio a illo excepturi omnis sequi delectus. Saepe sunt quidem mollitia commodi facere.</Text>
-        <Text style={styles.observation}>(texto criado a partir de "lorem")</Text>
+        <Text style={styles.observation}>texto criado a partir de "lorem" {`\n`}(não tente entender!)</Text>
       </View>
     </ExerciseContainer>
   )

@@ -25,13 +25,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     width: '90%',
-    paddingTop: 14,
-    paddingBottom: 14,
+    paddingVertical: 14,
     marginLeft: 'auto',
     marginRight: 'auto',
   },
   textButton: {
     fontSize: 20,
-    color: '#fff'
-  }
+    color: '#fff',
+  },
 });

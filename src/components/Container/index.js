@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function Container({ children }) {
   return (
-    <Pressable onPress={Keyboard.dismiss} style={styles.container}>
+    <View style={styles.container}>
       {children}
-    </Pressable>
+    </View>
   )
 }
 

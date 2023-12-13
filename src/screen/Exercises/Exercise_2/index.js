@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, FlatList, ScrollView } from 'react-native'
+import { View, Text, StyleSheet, FlatList} from 'react-native'
 import React from 'react'
 import ExerciseContainer from '../../../components/Container/ExerciseContatiner'
 
