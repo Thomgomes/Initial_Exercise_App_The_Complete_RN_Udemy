@@ -5,12 +5,18 @@ import ExerciseScreen from "../screen/ExerciseScreen";
 import Exercise_1 from "../screen/Exercises/Exercise_1";
 import Exercise_2 from "../screen/Exercises/Exercise_2";
 import Exercise_3 from "../screen/Exercises/Exercise_3";
+import Exercise_4 from "../screen/Exercises/Exercise_4";
 
 const Stack = createNativeStackNavigator()
 
 export default function Routes() {
     return (
         <Stack.Navigator>
+            <Stack.Screen
+                name="Exercise_4"
+                component={Exercise_4}
+                options={{ headerShown: false }}
+            />
             <Stack.Screen
                 name='Welcome'
                 component={Welcome}
@@ -36,6 +42,7 @@ export default function Routes() {
                 component={Exercise_3}
                 options={{ headerShown: false }}
             />
+            
         </Stack.Navigator>
     )
 }
