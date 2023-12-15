@@ -83,21 +83,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
 
     },
-    button: {
-        borderRadius: 50,
-        backgroundColor: '#6AB7E2',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingVertical: 14,
-        paddingHorizontal: 14,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: 10,
-    },
-    textButton: {
-        fontSize: 20,
-        color: '#fff'
-    },
     colorContent: {
         alignSelf: 'baseline',
         flexDirection: 'row',
