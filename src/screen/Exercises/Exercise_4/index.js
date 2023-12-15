@@ -10,13 +10,13 @@ export default function Exercise_4() {
     const [blue, setBlue] = useState(226)
 
     const redLimit = () => {
-        if (red > 255) {return setRed(255)} else if (red < 0) {return setRed(0)}
+        if (red > 255) { return setRed(255) } else if (red < 0) { return setRed(0) }
     }
     const greenLimit = () => {
-        if (green > 255) {return setGreen(255)} else if (green < 0) {return setGreen(0)}
+        if (green > 255) { return setGreen(255) } else if (green < 0) { return setGreen(0) }
     }
     const blueLimit = () => {
-        if (blue > 255) {return setBlue(255)} else if (blue < 0) {return setBlue(0)}
+        if (blue > 255) { return setBlue(255) } else if (blue < 0) { return setBlue(0) }
     }
 
     redLimit(), greenLimit(), blueLimit()
@@ -37,14 +37,14 @@ export default function Exercise_4() {
                     color10='10 Vermelho'
                     r={red}
                     g={green}
-                    b={blue}                 
+                    b={blue}
                 />
                 <ColorCounter
                     onIncrease1={() => setGreen(green + 1)}
                     onIncrease10={() => setGreen(green + 10)}
                     onDecrease1={() => setGreen(green - 1)}
                     onDecrease10={() => setGreen(green - 10)}
-                    color='Verde' 
+                    color='Verde'
                     color1='1 Verde'
                     color10='10 Verde'
                     r={red}
@@ -68,6 +68,7 @@ export default function Exercise_4() {
                     <View style={[styles.color, { backgroundColor: `rgb(${red}, ${green}, ${blue})` }]} />
                     <Text style={styles.colorText}>{`Cor rgb(${red}, ${green}, ${blue})`}</Text>
                 </View>
+                <Text style={styles.observation}>{`Ao clicar em cada um dos seguintes botões disponiveis, ativa uma função que acrescenta ou diminui o valor "rgb", que por conta de um estado constante de alteração muda tanto o valor do número visualmente ativo logo em cima, quanto na cor do cubo e dos botões.\n*Todos os numeros dentro do padrão rbg tem um limete que vai de 0 à 255*`}</Text>
             </View>
 
         </ExerciseContainer>

@@ -44,7 +44,7 @@ export default function Exercise_3() {
             )
           }}
         />
-        <Text style={styles.observation}>Ao clicar no botão de "gerar cor", ele aleatoriamente gera um cor e bota num vetor, assim renderizando na tela dentro de um componente de "flatList"</Text>
+        <Text style={styles.observation}>Ao clicar no botão de "gerar cor", ele aleatoriamente gera um cor e bota num vetor, assim renderizando na tela dentro de um componente de "flatList".</Text>
       </View>
     </ExerciseContainer>
   )

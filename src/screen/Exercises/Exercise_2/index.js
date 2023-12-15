@@ -58,7 +58,7 @@ export default function Exercise_2() {
         />
 
         <View>
-          <Text style={styles.observation}>Uma "flatList" com dados basicos com a configuração na horizontal</Text>
+          <Text style={styles.observation}>Uma "flatList" com dados basicos com a configuração na horizontal.</Text>
         </View>
       </View>
 
