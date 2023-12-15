@@ -21,7 +21,6 @@ export default function ExerciseContainer(props) {
             </View>
             <ScrollView style={styles.main}>
                 <View>
-
                     {props.children}
                 </View>
             </ScrollView>

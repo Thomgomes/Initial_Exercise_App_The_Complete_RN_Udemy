@@ -16,7 +16,7 @@ export default function ExerciseChosse(props) {
 
 const styles = StyleSheet.create({
     viewBox:{
-        paddingVertical: 20,
+        paddingVertical: 10,
     },
 
     textStyle: {
