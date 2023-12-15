@@ -1,22 +1,36 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import React from 'react'
 
-export default function ColorCounter({ color, onIncrease, onDecrease, r, g, b }) {
+export default function ColorCounter({ color, color1, color10, onIncrease1, onDecrease1, onIncrease10, onDecrease10, r, g, b }) {
     return (
         <View style={styles.container}>
             <Text style={styles.textColorName}>{color}</Text>
             <View style={styles.contentButton}>
                 <TouchableOpacity
                     style={[styles.button, {backgroundColor: `rgb(${r}, ${g}, ${b})`}]}
-                    onPress={() => onIncrease()}
+                    onPress={() => onIncrease1()}
                 >
-                    <Text style={styles.textButton}>+ {color}</Text>
+                    <Text style={styles.textButton}>+ {color1}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={[styles.button, {backgroundColor: `rgb(${r}, ${g}, ${b})`}]}
-                    onPress={() => onDecrease()}
+                    onPress={() => onDecrease1()}
                 >
-                    <Text style={styles.textButton}>- {color}</Text>
+                    <Text style={styles.textButton}>- {color1}</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={styles.contentButton}>
+                <TouchableOpacity
+                    style={[styles.button, {backgroundColor: `rgb(${r}, ${g}, ${b})`}]}
+                    onPress={() => onIncrease10()}
+                >
+                    <Text style={styles.textButton}>+ {color10}</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={[styles.button, {backgroundColor: `rgb(${r}, ${g}, ${b})`}]}
+                    onPress={() => onDecrease10()}
+                >
+                    <Text style={styles.textButton}>- {color10}</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -31,7 +45,7 @@ const styles = StyleSheet.create({
     textColorName: {
         alignSelf: 'center',
         fontSize: 22,
-        marginBottom: 15,
+        marginBottom: 10,
     },
     contentButton: {
         flexDirection: 'row'
@@ -40,14 +54,14 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingVertical: 14,
+        paddingVertical: 12,
         width: '40%',
         marginLeft: 'auto',
         marginRight: 'auto',
-        marginBottom: 15
+        marginBottom: 10
     },
     textButton: {
-        fontSize: 20,
+        fontSize: 18,
         color: '#fff',
     },
 })

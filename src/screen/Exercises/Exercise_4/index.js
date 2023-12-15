@@ -9,6 +9,17 @@ export default function Exercise_4() {
     const [green, setGreen] = useState(183)
     const [blue, setBlue] = useState(226)
 
+    const redLimit = () => {
+        if (red > 255) {return setRed(255)} else if (red < 0) {return setRed(0)}
+    }
+    const greenLimit = () => {
+        if (green > 255) {return setGreen(255)} else if (green < 0) {return setGreen(0)}
+    }
+    const blueLimit = () => {
+        if (blue > 255) {return setBlue(255)} else if (blue < 0) {return setBlue(0)}
+    }
+
+    redLimit(), greenLimit(), blueLimit()
     return (
         <ExerciseContainer
             title='Exercício 4'
@@ -17,25 +28,37 @@ export default function Exercise_4() {
             <View style={styles.viewBox}>
 
                 <ColorCounter
-                    onIncrease={() => setRed(red + 1)}
-                    onDecrease={() => setRed(red - 1)}
+                    onIncrease1={() => setRed(red + 1)}
+                    onIncrease10={() => setRed(red + 10)}
+                    onDecrease1={() => setRed(red - 1)}
+                    onDecrease10={() => setRed(red - 10)}
                     color='Vermelho'
+                    color1='1 Vermelho'
+                    color10='10 Vermelho'
                     r={red}
                     g={green}
                     b={blue}                 
                 />
                 <ColorCounter
-                    onIncrease={() => setGreen(green + 1)}
-                    onDecrease={() => setGreen(green - 1)}
+                    onIncrease1={() => setGreen(green + 1)}
+                    onIncrease10={() => setGreen(green + 10)}
+                    onDecrease1={() => setGreen(green - 1)}
+                    onDecrease10={() => setGreen(green - 10)}
                     color='Verde' 
+                    color1='1 Verde'
+                    color10='10 Verde'
                     r={red}
                     g={green}
                     b={blue}
                 />
                 <ColorCounter
-                    onIncrease={() => setBlue(blue + 1)}
-                    onDecrease={() => setBlue(blue - 1)}
+                    onIncrease1={() => setBlue(blue + 1)}
+                    onIncrease10={() => setBlue(blue + 10)}
+                    onDecrease1={() => setBlue(blue - 1)}
+                    onDecrease10={() => setBlue(blue - 10)}
                     color='Azul'
+                    color1='1 Azul'
+                    color10='10 Azul'
                     r={red}
                     g={green}
                     b={blue}
