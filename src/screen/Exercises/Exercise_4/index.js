@@ -19,17 +19,26 @@ export default function Exercise_4() {
                 <ColorCounter
                     onIncrease={() => setRed(red + 1)}
                     onDecrease={() => setRed(red - 1)}
-                    color='Vermelho'                   
+                    color='Vermelho'
+                    r={red}
+                    g={green}
+                    b={blue}                 
                 />
                 <ColorCounter
                     onIncrease={() => setGreen(green + 1)}
                     onDecrease={() => setGreen(green - 1)}
                     color='Verde' 
+                    r={red}
+                    g={green}
+                    b={blue}
                 />
                 <ColorCounter
                     onIncrease={() => setBlue(blue + 1)}
                     onDecrease={() => setBlue(blue - 1)}
                     color='Azul'
+                    r={red}
+                    g={green}
+                    b={blue}
                 />
 
                 <View style={styles.colorContent}>
@@ -68,7 +77,7 @@ const styles = StyleSheet.create({
     colorContent: {
         alignSelf: 'baseline',
         flexDirection: 'row',
-        marginBottom: 8,
+        marginTop: 15,
     },
     color: {
         height: 100,
