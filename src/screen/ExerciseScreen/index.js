@@ -28,6 +28,11 @@ export default function ExerciseScreen() {
                     navigation='Exercise_4'
                     buttonText='Incremento de cor'
                 />
+                <ExerciseChosse
+                    title='Exercício 5'
+                    navigation='Exercise_5'
+                    buttonText='Conclusão'
+                />
         </ExerciseContainer>
     )
 }
